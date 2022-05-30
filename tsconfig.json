@@ -1,0 +1,9 @@
+// Configuration for the TypeScript compiler
+{
+	"compilerOptions": {
+		"target": "ES2018",
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"module": "commonjs"
+	}
+}
