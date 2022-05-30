@@ -15,11 +15,7 @@ let collection = new TodoCollection('Cahouet', todos);
 console.clear();
 console.log(`${ collection.userName }'s Todo List`);
 
-// Don't forget that addTodo methods return an id !
-let newID = collection.addTodo('Go for run');
-// getTodoByID return a todoItem object
-let todoItem = collection.getTodoByID(newID);
-// Accessing the printDetails methods of TodoItem object
-todoItem.printDetails();
-
-console.log(JSON.stringify(todoItem));
+// Displaying all items
+collection.getTodoItems(true).forEach((item) => {
+	return item.printDetails();
+});
